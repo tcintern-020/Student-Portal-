@@ -2,6 +2,13 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { courses } from '../page';
 
+// Generate static routes for GitHub Pages
+export function generateStaticParams() {
+  return courses.map((course) => ({
+    slug: course.slug,
+  }));
+}
+
 export default async function CourseDetailsPage({ params }) {
   // Await params in Next.js 15+
   const resolvedParams = await params;

@@ -1,0 +1,50 @@
+export const courses = [
+  {
+    id: 1,
+    title: 'Modern Web Development with Next.js',
+    slug: 'web-development',
+    category: 'Web Dev',
+    price: '$99',
+    description: 'Master React and Next.js by building production-ready applications from scratch. Learn about routing, server components, and styling with Tailwind.',
+  },
+  {
+    id: 2,
+    title: 'AI Engineering and Machine Learning',
+    slug: 'ai-engineering',
+    category: 'AI / ML',
+    price: '$129',
+    description: 'Learn to build intelligent applications using Python, TensorFlow, and modern AI tools. Covers neural networks, NLP, and computer vision.',
+  },
+  {
+    id: 3,
+    title: 'UI/UX Design Masterclass',
+    slug: 'ui-ux-design',
+    category: 'Design',
+    price: '$79',
+    description: 'A comprehensive guide to designing beautiful, user-friendly interfaces. Master Figma, color theory, typography, and layout principles.',
+  },
+  {
+    id: 4,
+    title: 'Advanced Cloud Architecture',
+    slug: 'cloud-architecture',
+    category: 'Cloud',
+    price: '$149',
+    description: 'Scale your applications globally using AWS and modern cloud-native patterns. Dive deep into microservices, serverless, and CI/CD.',
+  },
+  {
+    id: 5,
+    title: 'Fullstack GraphQL with Apollo',
+    slug: 'graphql-apollo',
+    category: 'Web Dev',
+    price: '$89',
+    description: 'Build scalable APIs using GraphQL, Node.js, and Apollo Client. Say goodbye to REST and hello to efficient data fetching.',
+  },
+  {
+    id: 6,
+    title: 'Data Science Bootcamp',
+    slug: 'data-science',
+    category: 'AI / ML',
+    price: '$119',
+    description: 'Analyze complex data sets, build predictive models, and learn the math behind machine learning using Python and pandas.',
+  }
+];

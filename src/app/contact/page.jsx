@@ -1,14 +1,15 @@
+import Button from '@/components/ui/Button';
+import SectionTitle from '@/components/ui/SectionTitle';
+
 export default function ContactPage() {
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-      <div className="max-w-3xl mx-auto text-center mb-12">
-        <h1 className="text-4xl font-extrabold text-gray-900 tracking-tight">Get in Touch</h1>
-        <p className="mt-4 text-xl text-gray-500">
-          Have questions about our courses? We're here to help.
-        </p>
-      </div>
+      <SectionTitle 
+        title="Get in Touch" 
+        subtitle="Have questions about our courses or platform? We're here to help."
+      />
 
-      <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 p-8">
+      <div className="max-w-xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-gray-100 p-8 sm:p-10">
         <form className="space-y-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Full Name</label>
@@ -16,7 +17,7 @@ export default function ContactPage() {
               type="text" 
               id="name" 
               name="name" 
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors bg-gray-50 focus:bg-white"
               placeholder="John Doe"
             />
           </div>
@@ -26,7 +27,7 @@ export default function ContactPage() {
               type="email" 
               id="email" 
               name="email" 
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors bg-gray-50 focus:bg-white"
               placeholder="john@example.com"
             />
           </div>
@@ -35,17 +36,14 @@ export default function ContactPage() {
             <textarea 
               id="message" 
               name="message" 
-              rows="4"
-              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors"
-              placeholder="How can we help you?"
+              rows="5"
+              className="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500 transition-colors bg-gray-50 focus:bg-white resize-none"
+              placeholder="How can we help you today?"
             ></textarea>
           </div>
-          <button 
-            type="button" 
-            className="w-full bg-indigo-600 text-white font-bold py-3 px-4 rounded-lg hover:bg-indigo-700 transition-colors shadow-md focus:outline-none focus:ring-4 focus:ring-indigo-300"
-          >
+          <Button type="button" className="w-full mt-4">
             Send Message
-          </button>
+          </Button>
         </form>
       </div>
     </div>
